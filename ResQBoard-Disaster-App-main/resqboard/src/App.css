@@ -1,0 +1,135 @@
+/* src/App.css */
+
+body {
+  background-color: #282c34;
+  color: white;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.App {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.App-header {
+  margin-bottom: 40px;
+}
+
+.form-container {
+  margin-bottom: 40px;
+}
+
+.form-container input {
+  padding: 10px;
+  width: 70%;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.form-container button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #61dafb;
+  color: #282c34;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px; /* This adds some space between the buttons */
+  font-size: 1em;
+}
+.list-container h2 {
+  border-bottom: 1px solid #61dafb;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.post-item {
+  background-color: #3b4049;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  text-align: left;
+}
+/* --- Fix for Leaflet Map Zoom Buttons --- */
+.leaflet-control-zoom a {
+  background-color: white;
+  color: #333 !important;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.leaflet-control-zoom a:hover {
+  background-color: #f4f4f4;
+}
+
+.post-text {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.post-meta {
+  color: #aaa;
+  font-size: 0.8em;
+}
+
+/* --- Styles for Victim View and Role Switcher --- */
+
+.role-switcher {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+  opacity: 0.5;
+}
+
+.victim-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.sos-button {
+  background-color: #d32f2f; /* Red */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+/* This makes the button feel like it's being pressed */
+.sos-button:active {
+  transform: scale(0.95);
+  background-color: #b71c1c; /* Darker Red */
+}
+
+.needs-buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.needs-buttons-container h3 {
+  margin-bottom: 20px;
+}
+
+.needs-buttons-container button {
+  font-size: 1.2em;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.confirmation-message {
+  border: 2px solid #4caf50; /* Green border */
+  border-radius: 8px;
+  padding: 40px;
+  background-color: #384049;
+}
